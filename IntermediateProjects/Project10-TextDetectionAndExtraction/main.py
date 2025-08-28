@@ -1,6 +1,6 @@
 import cv2 as cv
 
-import pytesseract  #for character or text detection
+import pytesseract  #for character or text detection 
 
 pytesseract.pytesseract.tesseract_cmd=r"C:/Program Files/Tesseract-OCR/tesseract.exe"
 
@@ -13,6 +13,12 @@ gray=cv.cvtColor(img,cv.COLOR_BGR2GRAY)
 text=pytesseract.image_to_string(gray)
 
 print(text)
+
+file=open("recoginised.txt","w+")
+
+file.write(text)
+
+file.close()
 
 # cv.imshow("Demo",gray)
 
