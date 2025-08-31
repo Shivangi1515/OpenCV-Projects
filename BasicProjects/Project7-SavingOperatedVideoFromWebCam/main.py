@@ -14,7 +14,7 @@ out=cv.VideoWriter('output.avi',FourCC,20.0,(640,480))
 while(True):
     ret,frame=capture.read()
 
-    out.write(frame)
+    out.write(frame) 
 
     cv.imshow('live',frame)
 
