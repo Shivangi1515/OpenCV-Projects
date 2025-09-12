@@ -2,7 +2,7 @@ import cv2 as cv
 
 a=cv.CascadeClassifier("IntermediateProjects/Project16-FaceDetection/haarcascade_frontalface_default.xml")  
 
-#Haarcascade Frontal Face Detection is a pretrained classifier used to detect images
+#Haarcascade Frontal Face Detection is a pretrained classifier used to detect faces in images
 
 cam=cv.VideoCapture(0) 
 
